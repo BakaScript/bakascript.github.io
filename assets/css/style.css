@@ -1,7 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.carousel-cell {
+    width: 100%; /* full width */
+    margin-right: 0;
+  }
+
+.carousel-img {
+    width: 100% ;
+    max-height : 500px ;
+    min-height: 500px ;
+}
+
+.tagline_mobile {
+    display: none ;
+    margin-bottom: -25px;
+    line-height: 40px ;
+    color : black ;
+}
+
+.tagline_mobile::before {
+    content: '';
+    /* width: 198px; */
+    left: 0;
+    height: 1px;
+    /* padding: 2px; */
+    background: rgba(0,0,0, 0.2);
+    right: 0;
+    position: absolute;
+}
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .navbar-brand span {
         display: none ;
+    }
+
+    .tagline_mobile {
+        display: block ;
     }
 }
