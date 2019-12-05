@@ -1,20 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 body {
     font-family: 'Raleway', sans-serif;
 }
 
-.carousel-cell {
-    width: 100%; /* full width */
-    margin-right: 0;
-  }
-
-.carousel-img {
-    width: 100% ;
-    max-height : 500px ;
-    min-height: 500px ;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Alatsi', sans-serif;
 }
 
+/* Nav */
 .tagline_mobile {
     display: none ;
     margin-bottom: -25px;
@@ -32,6 +27,84 @@ body {
     right: 0;
     position: absolute;
 }
+/* End Nav */
+
+
+/* Carousel */
+.carousel-cell {
+    width: 100%; /* full width */
+    margin-right: 0;
+  }
+
+.carousel-img {
+    width: 100% ;
+    max-height : 600px ;
+    min-height: 600px ;
+    position: relative;
+    top : -50px ;
+}
+
+.flickity-page-dots {
+    width: auto ;
+    background: rgba(0,0,0, .3);
+    margin: 0 auto;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    bottom: 4em ;
+    
+}
+
+.flickity-page-dots .dot {
+    background: transparent ;
+    border: 1px solid #fff;
+}
+
+.flickity-page-dots .dot.is-selected {
+    background: #fff ;
+}
+
+.flickity-prev-next-button.previous {
+    left: 0;
+    border-radius: unset; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.flickity-prev-next-button.next {
+    right: 0;
+    border-radius: unset; 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/* End Carousel */
+
+
+/* Style main */
+.main__tagline, .main__header {
+    font-weight: bold ;
+}
+
+.main__border-left {
+    border-left: 1.5px dashed #363636 ;
+}
+
+.rp {
+    font-size : 20px ;
+}
+
+.car_thumb {
+    max-width: 240px;
+
+}
+
+.text_price {
+    line-height: 0 ; 
+    color: #114298 ;
+}
+/* End Main */
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .navbar-brand span {
@@ -41,4 +114,43 @@ body {
     .tagline_mobile {
         display: block ;
     }
+
+    .carousel-img {
+        width: 100% ;
+        max-height : 150px ;
+        min-height: 150px ;
+        top : 0 ;
+
+    }
+
+    .flickity-page-dots {
+        width: auto ;
+        background: rgba(0,0,0, .3);
+        margin: 0 auto;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        bottom: .5em ;
+        
+    }
+
+    .main__border-left {
+        border-left: none ;
+        border-bottom: 2px dashed #363636 ;
+    }
+
+    .main__tagline {
+        margin-top : 20px ;
+        font-size: 18px;
+        text-align: center ;
+    }
+
+    .main__subtagline {
+        font-size : 13px ;
+        text-align: center ;
+    }
+    
+
+   
 }
